@@ -17,3 +17,9 @@ sudo chown -R vagrant:vagrant /home/vagrant/.ssh
 cat ./vagrant.pub >> /home/vagrant/.ssh/authorized_keys
 sudo chown -R vagrant:vagrant /home/vagrant/.ssh/authorized_keys
 echo "All Done!"
+
+# Installing Apache2 Websrever
+sudo apt -y install apache2
+sudo mkdir /home/webserver
+git clone https://github.com/mfarrell-iit/boostrap-website.git /home/webserver
+echo "Webserver installed and website cloned!"
